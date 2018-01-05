@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>PEARLHACKS2018</title>
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
+        <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Custom Styles -->
+        <style>
+            section {
+                margin: 15px;
+                padding: 10px;
+                border: 1px solid lightgrey;
+            }
+            label {
+                margin-right: 5px;
+            }
+            form input[type="radio"], form input[type="checkbox"] {
+                margin-left: 10px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2 class="text-center">Example 1</h2>
+        
+        <section id="sectionOne">
+            <p>This is my first sentence.</p>
+            <p>This is my second sentence.</p>
+            <p>This is my third sentence.</p>
+            <p>This is my fourth sentence.</p>
+        </section>
+        
+        <section>
+            <form name="myForm">
+                <p>
+                    <label>First Name:</label>
+                    <input type="text" class="input-sm" name="firstName" id="firstName" />
+                </p>
+                <p>
+                    <label>Last Name:</label>
+                    <input type="text" class="input-sm last-name" name="lastName" id="lastName" />
+                </p>
+                <p><label for="tshirtSize">T-Shirt Size:</label>
+                    <input type="radio" name="tshirtSize" value="small"> S
+                    <input type="radio" name="tshirtSize" value="medium"> M
+                    <input type="radio" name="tshirtSize" value="large"> L
+                    <input type="radio" name="tshirtSize" value="xlarge"> XL
+                    <input type="radio" name="tshirtSize" value="xxlarge"> XXL
+                </p>
+                <p><label>State:</label>
+                    <select name="state" class="input-sm">
+                        <option>Select...</option>
+                        <option value="NC">NC</option>
+                        <option value="SC">SC</option>
+                        <option value="VA">VA</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p><label>JavaScript Interests: </label>
+                    <input type="checkbox" name="jsInterests" value="jQuery" checked> jQuery
+                    <input type="checkbox" name="jsInterests" value="angular"> Angular
+                    <input type="checkbox" name="jsInterests" value="react"> React 
+                    <input type="checkbox" name="jsInterests" value="other"> Other
+                </p>
+                <p>
+                    <button class="btn btn-primary btn-small" type="submit">Submit</button>
+                    <button class="btn btn-default btn-small" type="reset">Reset</button>
+                </p>
+                <p class="hidden">HIDE ME</p>
+            </form>
+        </section>
+        
+        <!-- jQuery Script -->
+        <script>
+        $(document).ready(function() {
+            
+            //$('p').css({"background-color":"yellow"});  // Example 1.1 - tag selector
+            //$('input,button').css({"background-color":"green"});
+            
+            //$('section,p,input').css({"background-color":"purple"});  // Example 1.2 - multiple selectors 
+            //$('section p input').css({"background-color":"purple"});
+            
+            //$('input.last-name').css({"color":"white"});  // Example 1.3 - class selector 
+            
+            //$('#sectionOne').css({"font-family":"Georgia"});  // Example 1.4 - id selector 
+            
+            //$('p:odd').css({"background-color":"blue"});  // Example 1.5 - odd/even selector 
+            
+            //$('section:eq(0) p').css({"background-color":"blue"});  // Example 1.6 - eq selector 
+            
+            //$('p:odd').css({"background-color":"grey"});  // Example 1.7 - odd & even selector 
+            //$('p:even').css({"color":"green"});
+            
+            //$('section p:first').css({"background-color":"red","color":"yellow"});  // Example 1.8 - 
+            //$('section p:first-child').css({"background-color":"yellow","color":"red"});  // first vs first-child
+            
+            //$('input[type="radio"]').css({"display":"none"});  // Example 1.9 - attribute selector (vs form)
+            //$(':radio').css({"display":"block"});
+           
+            //$('p:contains("sentence")').css({"background-color":"green"});  // Example 1.10 - content selector
+            //$('p:contains("third")').css({"border-bottom":"10px solid black"});
+            //$('p:has(input[type="radio"])').css({"background-color":"pink"});
+            
+            //$('p:hidden').text("SHOW ME").removeClass('hidden');  // Example 1.11 - visibility selector
+            
+        });
+        </script>
+    </body>
+</html>
