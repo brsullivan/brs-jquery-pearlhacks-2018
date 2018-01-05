@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PEARLHACKS2018</title>
+        <!-- Include jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        
+        <!-- Include Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Custom Styles -->
+        <style>
+            .table,tr,td {
+                padding: 10px;
+            }
+            .stripe {
+                background-color: lightblue;
+                font-family: Georgia, serif;
+            }
+            .highlight {
+                background-color: yellow;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h2 class="text-center">Example 2</h2>
+            <table>
+                <caption>Team One</caption>
+                <thead>
+                    <tr><th>Name</th><th>Age</th><th>Skill(s)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>April</td><td>21</td><td>jQuery</td></tr>
+                    <tr><td>May</td><td>18</td><td>Angular,CSS</td></tr>
+                    <tr><td>June</td><td>20</td><td>Java</td></tr>
+                    <tr><td>Sally</td><td>19</td><td>Visaul Design</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script>
+            $(document).ready(function() {
+                //$('tr:odd').addClass('stripe');  // Example 2.1 - add class
+            
+                //$('tr:eq(3)').removeClass('stripe').addClass('highlight');  // Example 2.2 - remove class
+                
+                $('tr:even').addClass('highlight');  // Example 2.3 - has class & toggle class 
+                if($('tr:eq(0)').hasClass('highlight')) {
+                    ('tr:eq(0)').toggleClass('highlight');
+                }
+               
+            });
+        </script>
+    </body>
+</html>
