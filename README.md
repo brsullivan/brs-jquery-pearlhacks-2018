@@ -1,6 +1,5 @@
 # brs-jquery-pearlhacks-2018
-Intro to jQuery Examples for use with presentation at http://slides.com/braelynsullivan-18/intro-to-jquery
-
+Intro to jQuery Examples for use with presentation at PearlHacks 2018
 # Using the Examples
 The example files correspond directly with the sections of the presentation.
 The JavaScript and HTML in the example files is configured so that it will run in a browser out-of-the-box.
